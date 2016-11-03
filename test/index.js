@@ -1,6 +1,7 @@
 import test from 'tape';
 import { Schema, normalize, arrayOf } from 'normalizr';
 import nock from 'nock';
+import fetch from 'isomorphic-fetch';
 
 import CALL_API from '../src/CALL_API';
 import { isRSAA, isValidTypeDescriptor, validateRSAA, isValidRSAA } from '../src/validation';
